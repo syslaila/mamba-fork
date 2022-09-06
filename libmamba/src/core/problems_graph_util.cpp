@@ -13,7 +13,7 @@ namespace mamba
     {
         static std::regex const regexp("\\s*(\\w[\\w-]*)\\s*(.*)\\s*");
         std::smatch matches;
-        bool matched = std::regex_search(dep, matches, regexp);
+        bool const matched = std::regex_match(dep, matches, regexp);
         if (!matched || matches.size() != 2)
         {
             throw std::runtime_error("unable to parse dep");
