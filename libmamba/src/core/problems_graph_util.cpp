@@ -8,31 +8,6 @@
 namespace mamba
 {
 
-    namespace NodeInfo
-    {
-        ResolvedPackage::ResolvedPackage(PackageInfo const& package_info)
-            : m_package_info(package_info)
-        {
-        }
-
-        ProblematicPackage::ProblematicPackage(std::string const& dep)
-            : m_dep(dep)
-        {
-        }
-    }
-
-    namespace EdgeInfo
-    {
-        Require::Require(DependencyInfo const& dep)
-            : m_dep(dep)
-        {
-        }
-
-        Constraint::Constraint(DependencyInfo const& dep)
-            : m_dep(dep)
-        {
-        }
-    }
 
     DependencyInfo::DependencyInfo(const std::string& dep)
     {
