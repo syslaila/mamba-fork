@@ -58,7 +58,6 @@ namespace mamba
         struct ResolvedPackage
         {
             PackageInfo m_package_info;
-            ResolvedPackage(PackageInfo const& package_info);
         };
 
         struct ProblematicPackage
