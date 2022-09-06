@@ -74,7 +74,6 @@ namespace mamba
         struct Require
         {
             DependencyInfo m_dep;
-            Require(DependencyInfo const& dep);
         };
         struct Constraint
         {
