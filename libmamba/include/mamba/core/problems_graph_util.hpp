@@ -110,7 +110,6 @@ namespace mamba
         edge_info m_info;
     };
 
-    template <typename T, typename U>
     class MProblemsGraph
     {
     public:
