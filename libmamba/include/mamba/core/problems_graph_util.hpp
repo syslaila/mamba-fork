@@ -78,7 +78,6 @@ namespace mamba
         struct Constraint
         {
             DependencyInfo m_dep;
-            Constraint(DependencyInfo const& dep);
         };
     }
 
