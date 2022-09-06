@@ -11,7 +11,7 @@ namespace mamba
 
     DependencyInfo::DependencyInfo(const std::string& dep)
     {
-        std::regex regexp("\\s*(\\w[\\w-]*)\\s*(.*)\\s*");
+        static std::regex const regexp("\\s*(\\w[\\w-]*)\\s*(.*)\\s*");
         std::smatch matches;
         bool matched = std::regex_search(dep, matches, regexp);
         if (!matched || matches.size() != 2)
