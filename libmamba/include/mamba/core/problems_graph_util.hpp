@@ -63,7 +63,6 @@ namespace mamba
         struct ProblematicPackage
         {
             std::string m_dep;
-            ProblematicPackage(std::string const& dep);
         };
         struct Root
         {
